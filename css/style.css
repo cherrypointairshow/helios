@@ -254,7 +254,7 @@
 		
 			/* Uncomment the block below if you want linked images to highlight on hover */
 		
-			/*
+			
 			a.image:before
 			{
 				content: '';
@@ -277,7 +277,7 @@
 				{
 					opacity: 0.15;
 				}
-			*/
+			
 		
 			.image img
 			{
@@ -1083,7 +1083,7 @@
 			.homepage #header .overlay
 			{
 				content: '';
-				background: #1C0920;
+				background: #212c4a;
 				display: block;
 				position: absolute;
 				left: 0;
@@ -1131,7 +1131,7 @@
 	
 		#header .byline
 		{
-			font-size: 1.25em;
+			font-size: 1.5em;
 			margin: 0;
 			text-shadow: 1px -1px 7px rgba(0, 0, 0, 1);
 		}
@@ -1145,6 +1145,7 @@
 			text-align: center;
 			font-size: 1.25em;
 			padding: 0;
+			visibility:hidden;
 		}
 		
 		#header header
@@ -1171,6 +1172,7 @@
 			{
 				background: rgba(192,192,192,0.35);
 			}
+
 
 /*********************************************************************************/
 /* Nav                                                                           */

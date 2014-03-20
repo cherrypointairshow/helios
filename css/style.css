@@ -24,7 +24,7 @@
 	body
 	{
 		background: #f0f4f4;
-		color: #5b5b5b;
+		color: #212c4a;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
 	}
@@ -38,7 +38,7 @@
 	h1,h2,h3,h4,h5,h6
 	{
 		font-weight: 400;
-		color: #483949;
+		color: #212c4a;
 		line-height: 1.25em;
 	}
 	
@@ -64,6 +64,16 @@
 		font-size: 1.25em;
 	}
 	
+	.good h3
+	{
+		color:#339900;
+	}
+
+	.bad h3
+	{
+		color:#cc0000;
+	}
+
 	h4
 	{
 		font-size: 1em;
@@ -556,6 +566,8 @@
 			.button.huge
 			{
 			}
+
+	
 			
 	/* Posts */
 
@@ -1318,7 +1330,7 @@
 		background: #212C4A;
 		text-align: center;
 		color: #fff;
-		padding: 4.5em 0 4.5em 0;
+		padding: 3em 0 3em 0;
 	}
 
 	#banner2
@@ -1326,7 +1338,7 @@
 			background: #212C4A;
 			text-align: center;
 			color: #fff;
-			padding: 4.5em 0 4.5em 0;
+			padding: 3em 0 3em 0;
 		}
 
 /*********************************************************************************/

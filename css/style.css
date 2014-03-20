@@ -537,6 +537,8 @@
 			{
 				color: #fff;
 				background: #6699cc;
+				opacity:0.9;
+				filter:alpha(opacity=90); /* For IE8 and earlier */
 			}
 			
 			.button:active
@@ -549,6 +551,7 @@
 
 				.button.alt:hover
 				{
+
 				}
 				
 				.button.alt:active
@@ -1145,8 +1148,18 @@
 			text-align: center;
 			font-size: 1.25em;
 			padding: 0;
-			visibility:hidden;
+			opacity:0.5;
+			filter:alpha(opacity=50); /* For IE8 and earlier */
 		}
+
+
+		#header .button:hover
+			{
+				color: #fff;
+				background: #6699cc;
+				opacity:0.8;
+				filter:alpha(opacity=80); /* For IE8 and earlier */
+			}
 		
 		#header header
 		{

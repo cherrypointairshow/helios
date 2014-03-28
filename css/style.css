@@ -595,6 +595,44 @@
 					margin: 0;
 				}
 
+
+	/* Accordion */
+	#accordion{
+	    width: 100%;
+	    margin: 0px;
+	    padding: 0px;
+	    list-style: none;
+	}
+	#accordion h2{
+	    font-size: 1.25em;
+	    margin: 0px;
+	    padding: 10px;
+	    background: #ddd;
+	    border-bottom: 4px solid #fff;
+	}
+	#accordion h3{
+	    font-size: 0.9em;
+	    margin: 0px;
+	    padding: 5px;
+	    padding-left:10px;
+	    background: #ddd;
+	    border-bottom: 1px solid #fff;
+	}
+	#accordion li div.content{
+	    display: none;
+	    padding: 10px;
+	    background: #f9f9f9;
+	    border: 1px solid #ddd;
+	}
+	#accordion li:hover div.content{
+	    display: inherit;
+	}
+	#accordion li:active div.content{
+	    display: inherit;
+	}
+
+
+
 /*********************************************************************************/
 /* Icons                                                                         */
 /* Powered by Font Awesome by Dave Gandy | http://fontawesome.io                 */

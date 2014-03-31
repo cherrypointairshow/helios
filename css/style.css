@@ -254,7 +254,7 @@
 		
 			/* Uncomment the block below if you want linked images to highlight on hover */
 		
-			/*
+			
 			a.image:before
 			{
 				content: '';
@@ -277,7 +277,7 @@
 				{
 					opacity: 0.15;
 				}
-			*/
+			
 		
 			.image img
 			{
@@ -291,6 +291,13 @@
 				width: 100%;
 			}
 
+
+			.image.sponsors
+			{
+				display: block;
+				width: 100%;
+			}
+			
 			.image.featured
 			{
 				display: block;
@@ -298,6 +305,25 @@
 				margin: 0 0 4em 0;
 			}
 			
+			.image.logo-container
+			{
+				display: inherit;
+				width: 100%;
+				height: auto;
+				position: relative;
+   				top:-3em;
+			}
+
+			/* Special rule for logo */
+			@media only screen and (max-width: 480px) {.image.logo-container
+			{
+				display: block;
+				width: 200%;
+				position: relative;
+				top:-5em;
+				left:-5em; }
+			}
+
 			.image.left
 			{
 				float: left;
@@ -537,6 +563,8 @@
 			{
 				color: #fff;
 				background: #6699cc;
+				opacity:0.9;
+				filter:alpha(opacity=90); /* For IE8 and earlier */
 			}
 			
 			.button:active
@@ -549,6 +577,7 @@
 
 				.button.alt:hover
 				{
+
 				}
 				
 				.button.alt:active
@@ -584,6 +613,44 @@
 				{
 					margin: 0;
 				}
+
+
+	/* Accordion */
+	#accordion{
+	    width: 100%;
+	    margin: 0px;
+	    padding: 0px;
+	    list-style: none;
+	}
+	#accordion h2{
+	    font-size: 1.25em;
+	    margin: 0px;
+	    padding: 10px;
+	    background: #ddd;
+	    border-bottom: 4px solid #fff;
+	}
+	#accordion h3{
+	    font-size: 0.9em;
+	    margin: 0px;
+	    padding: 5px;
+	    padding-left:10px;
+	    background: #ddd;
+	    border-bottom: 1px solid #fff;
+	}
+	#accordion li div.content{
+	    display: none;
+	    padding: 10px;
+	    background: #f9f9f9;
+	    border: 1px solid #ddd;
+	}
+	#accordion li:hover div.content{
+	    display: inherit;
+	}
+	#accordion li:active div.content{
+	    display: inherit;
+	}
+
+
 
 /*********************************************************************************/
 /* Icons                                                                         */
@@ -1083,7 +1150,7 @@
 			.homepage #header .overlay
 			{
 				content: '';
-				background: #1C0920;
+				background: #212c4a;
 				display: block;
 				position: absolute;
 				left: 0;
@@ -1131,7 +1198,7 @@
 	
 		#header .byline
 		{
-			font-size: 1.25em;
+			font-size: 1.5em;
 			margin: 0;
 			text-shadow: 1px -1px 7px rgba(0, 0, 0, 1);
 		}
@@ -1145,7 +1212,18 @@
 			text-align: center;
 			font-size: 1.25em;
 			padding: 0;
+			opacity:0.75;
+			filter:alpha(opacity=75); /* For IE8 and earlier */
 		}
+
+
+		#header .button:hover
+			{
+				color: #fff;
+				background: #6699cc;
+				opacity:0.95;
+				filter:alpha(opacity=95); /* For IE8 and earlier */
+			}
 		
 		#header header
 		{
@@ -1171,6 +1249,17 @@
 			{
 				background: rgba(192,192,192,0.35);
 			}
+
+		#logo-container img{
+			width: auto;
+   			height: 100%;
+   			position: relative;
+   			top:-2em;
+			;
+		}
+
+		
+
 
 /*********************************************************************************/
 /* Nav                                                                           */
@@ -1250,11 +1339,10 @@
 				#nav > ul > li > span
 				{
 					display: block;
-					color: inherit;
+					color: #212c4a;
 					text-decoration: none;
 					border: 0;
 					outline: 0;
-					text-shadow: 1px -1px 5px rgba(0, 0, 0, 1);
 				}
 
 				#nav > ul > li > ul

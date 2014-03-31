@@ -305,6 +305,25 @@
 				margin: 0 0 4em 0;
 			}
 			
+			.image.logo-container
+			{
+				display: inherit;
+				width: 100%;
+				height: auto;
+				position: relative;
+   				top:-3em;
+			}
+
+			/* Special rule for logo */
+			@media only screen and (max-width: 480px) {.image.logo-container
+			{
+				display: block;
+				width: 200%;
+				position: relative;
+				top:-5em;
+				left:-5em; }
+			}
+
 			.image.left
 			{
 				float: left;
@@ -1193,8 +1212,8 @@
 			text-align: center;
 			font-size: 1.25em;
 			padding: 0;
-			opacity:0.5;
-			filter:alpha(opacity=50); /* For IE8 and earlier */
+			opacity:0.75;
+			filter:alpha(opacity=75); /* For IE8 and earlier */
 		}
 
 
@@ -1202,8 +1221,8 @@
 			{
 				color: #fff;
 				background: #6699cc;
-				opacity:0.8;
-				filter:alpha(opacity=80); /* For IE8 and earlier */
+				opacity:0.95;
+				filter:alpha(opacity=95); /* For IE8 and earlier */
 			}
 		
 		#header header
@@ -1230,6 +1249,16 @@
 			{
 				background: rgba(192,192,192,0.35);
 			}
+
+		#logo-container img{
+			width: auto;
+   			height: 100%;
+   			position: relative;
+   			top:-2em;
+			;
+		}
+
+		
 
 
 /*********************************************************************************/
@@ -1310,11 +1339,10 @@
 				#nav > ul > li > span
 				{
 					display: block;
-					color: inherit;
+					color: #212c4a;
 					text-decoration: none;
 					border: 0;
 					outline: 0;
-					text-shadow: 1px -1px 5px rgba(0, 0, 0, 1);
 				}
 
 				#nav > ul > li > ul

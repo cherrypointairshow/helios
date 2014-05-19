@@ -49,6 +49,10 @@
 			border-bottom-color: transparent;
 		}
 		
+		h3 a,
+		{text-align: center;}
+
+
 		h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong
 		{
 			font-weight: 600;
@@ -681,7 +685,7 @@
 	#mc_embed_signup .clear {clear:none; display:inline;}
 
 	#mc_embed_signup label {display:block; font-size:16px; padding-bottom:10px; font-weight:bold;}
-	#mc_embed_signup input.email {display:inline; padding:8px 0; margin:0 4% 10px 0; text-indent:5px; width:58%; min-width:130px;}
+	#mc_embed_signup input.email {display:inline; padding:8px 0; margin:0 0% 10px 0; text-indent:5px; width:58%; min-width:130px;}
 	#mc_embed_signup input.button {display:inline; width:35%; margin:0 0 10px 0; min-width:90px;}
 
 	#mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
@@ -1166,6 +1170,7 @@
 		{
 			padding-top: 0;
 		}
+		
 
 /*********************************************************************************/
 /* Header                                                                        */
@@ -1183,6 +1188,7 @@
 		padding: 2.5em 0 2em 0;
 		cursor: default;
 	}
+
 
 		.homepage #header
 		{
@@ -1299,8 +1305,106 @@
    			top:-2em;
 			;
 		}
+/*********************************************************************************/
+/* for use in post-show page                                                    */
+/*********************************************************************************/
+#header2 
+	{
+		position: relative;
+		background-image: url('../images/header.jpg');
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 0em 0 0em 0;
+		cursor: default;
+	}
 
+			#header2 .inner
+		{
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 4em 0 0 0;
+		}
+	
+		#header2 h1
+		{
+			color: #fff;
+			font-size: 3em;
+			line-height: 1em;
+			text-shadow: 2px -1px 7px rgba(0, 0, 0, .75);
+		}
+
+			.homepage #header2 h1
+			{
+				font-size: 4em;
+			}
 		
+			#header2 h1 a
+			{
+				color: inherit;
+			}
+	
+		#header2 .byline
+		{
+			font-size: 1.5em;
+			margin: 0;
+			text-shadow: 1px -1px 7px rgba(0, 0, 0, 1);
+		}
+		
+		#header2 .button
+		{
+			border-radius: 100%;
+			width: 4.5em;
+			height: 4.5em;
+			line-height: 4.5em;
+			text-align: center;
+			font-size: 1.25em;
+			padding: 0;
+			opacity:0.75;
+			filter:alpha(opacity=75); /* For IE8 and earlier */
+		}
+
+
+		#header2 .button:hover
+			{
+				color: #fff;
+				background: #6699cc;
+				opacity:0.95;
+				filter:alpha(opacity=95); /* For IE8 and earlier */
+			}
+		
+		#header2 header
+		{
+			display: inline-block;
+		}
+		
+		#header2 footer
+		{
+			margin: 1em 0 0 0;
+		}
+		
+		#header2 hr
+		{
+			top: 1.5em;
+			margin-bottom: 3em;
+
+			border-bottom-color: rgba(192,192,192,0.35);
+			box-shadow: inset 0 1px 0 0 rgba(192,192,192,0.35);
+		}
+		
+			#header2 hr:before,
+			#header2 hr:after
+			{
+				background: rgba(192,192,192,0.35);
+			}
+
+/*********************************************************************************/
+/* end of post-show page*                                                        */
+/*********************************************************************************/
+
 
 
 /*********************************************************************************/
